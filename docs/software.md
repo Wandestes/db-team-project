@@ -224,13 +224,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (1, 'Dmytro_Kulyk', 'abcdefgh', 'kulyk.dmytro@lll.kpi.ua', '2024-10-17 12:28:24', '2024-11-03 10:07:42', 1);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (2, 'Yulianna_Vakhnina', 'abcdefghij', 'vakhnina.yulianna@lll.kpi.ua', '2024-10-27 13:42:21', '2024-11-03 10:11:42', 1);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (3, 'Artem_Balabas', '12345678', 'balabas.artem@lll.kpi.ua', '2024-11-01 11:28:55', '2024-11-03 09:11:42', 2);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (4, 'Lev_Bereza', '87654321', 'bereza.lev@lll.kpi.ua', '2024-11-01 13:15:37', NULL, 2);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (5, 'Yaroslav_Kantur', '546846sd', 'kantur.yaroslav@lll.kpi.ua', '2024-10-28 15:53:12', NULL, 2);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (6, 'Danylo_Pistriuha', '09876543', 'pistriuha.danylo@lll.kpi.ua', '2024-11-01 12:33:28', '2024-11-02 14:15:11', 2);
-INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (7, 'Volodymyr_Shkarban', '34567890', 'shkarban.volodymyr@lll.kpi.ua', '2024-11-01 18:45:01', NULL, 2);
+INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (1, 'Shcherbakov_Illia', 'Wandestes', 'gilua5568@gmail.com', '2024-11-20 15:13:59', '2024-11-27 08:13:57', 1);
+INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (2, 'Dereviankin_Ivan', 'Vanya', 'ukrustacean@gmail.com', '2024-11-20 10:26:43', '2024-11-27 15:26:38', 1);
+INSERT INTO `mydb`.`User` (`id`, `name`, `password`, `email`, `account_creation_date`, `last_login_date`, `Role_id`) VALUES (3, 'Chernyshova_Maria', 'Maria', 'marija.tchernishowa@gmail.com', '2024-11-20 15:11:28', '2024-12-20 19:45:17', 2);
 
 COMMIT;
 
@@ -240,9 +236,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (1, 'Science', 'Information related to science');
-INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (2, 'Technology', 'Technological and societal data');
-INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (3, 'Environment', 'Environmental and health studies');
+INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (1, 'Gamecon', 'Information related to Gamecon from all time');
+INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (2, 'Movies', 'Movies and cartoons');
+INSERT INTO `mydb`.`Category` (`id`, `name`, `description`) VALUES (3, 'Education for kids', 'Puzzles for kids');
 
 COMMIT;
 
@@ -252,16 +248,11 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (1, 'Climate Change Impact', 'Global warming data 1990-2020', '2023-02-26 10:26:54', '2023-03-12 12:24:28', 3);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (2, 'Population by Country 2023', 'Population numbers by country', '2023-05-12 19:15:12', NULL, 1);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (3, 'COVID-19 Vaccination Statistics', 'Vaccination data from 2020 onwards', '2023-11-30 16:17:29', '2024-10-16 17:30:56', 3);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (4, 'Renewable Energy Usage 2022', 'Energy data by source, 2022', '2023-01-12 17:26:17', NULL, 3);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (5, 'World Education Index 2023', 'Education index for countries worldwide', '2024-04-08 08:54:54', NULL, 1);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (6, 'Tech Innovations 2023', 'Key tech breakthroughs of the year', '2024-03-15 11:49:02', NULL, 2);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (7, 'Global Health Spending', 'Health expenditure by country', '2022-08-16 13:23:16', '2024-06-09 12:17:53', 3);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (8, 'Employment Rates by Sector', 'Employment data by economic sector', '2022-12-20 20:28:32', '2023-01-19 14:01:12', 1);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (9, 'Cultural Heritage Sites', 'UNESCO heritage sites worldwide', '2023-05-04 09:41:32', '2024-08-01 17:23:15', 1);
-INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (10, 'Food Production Statistics', 'Global food production by type', '2023-10-26 11:11:11', '2024-05-07 16:15:45', 3);
+INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (1, 'Puzzles', 'Puzzles types', '2023-06-18 17:42:21', '2023-08-14 09:42:36', 3);
+INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (2, 'Movies', 'Shrek', '2023-02-10 20:17:22', NULL, 1);
+INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (3, 'Cartoons', 'Ben-10', '2023-09-26 19:11:19', '2019-16-13 09:30:01', 3);
+INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (4, 'Game of the year 2024', 'Stalker 2', '2024-12-20 19:30:00', NULL, 3);
+INSERT INTO `mydb`.`Data` (`id`, `name`, `content`, `upload_date`, `last_edit_date`, `Category_id`) VALUES (5, 'Games', 'Games list', '2016-06-14 11:59:54', NULL, 1);
 
 COMMIT;
 
@@ -271,13 +262,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (1, 'Details by country would make this more useful', '2024-11-05 08:32:14', 2, 1);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (2, 'Good to see updated info! Thanks', '2024-11-05 14:23:52', 2, 3);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (3, 'Nice index! More info on remote regions would help', '2024-11-08 13:32:55', 5, 5);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (4, 'Perfect for analysis. Add pandemic funding data?', '2024-11-08 08:18:34', 7, 7);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (5, 'Thanks for this! More on IT and healthcare would help', '2024-11-06 09:38:27', 4, 8);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (6, 'More photos and history of each site would be cool', '2024-11-07 14:16:32', 6, 9);
-INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (7, 'Could it include data on organic vs. conventional farming?', '2024-11-07 13:27:14', 3, 10);
+INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (1, 'Shrek is sus', '2024-09-05 08:33:19', 2, 2);
+INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (2, 'Thank you for adding my favorite childhood movie', '2024-10-06 12:13:42', 1, 3);
+INSERT INTO `mydb`.`Comment` (`id`, `content`, `creation_date`, `User_id`, `Data_id`) VALUES (3, 'Im really surprised', '2024-12-20 21:13:19, 3, 4);
 
 COMMIT;
 
@@ -305,10 +292,10 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (1, '2024-11-03 10:07:42', '2024-11-03 11:12:32', 1);
-INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (2, '2024-11-03 10:11:42', '2024-11-03 11:01:41', 2);
-INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (3, '2024-11-03 09:11:42', '2024-11-03 10:35:13', 3);
-INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (4, '2024-11-02 14:15:11', '2024-11-02 15:17:19', 6);
+INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (1, '2024-11-27 08:13:57', '2024-11-27 11:16:42', 1);
+INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (2, '2024-11-27 05:26:38', '2024-11-27 11:01:41', 2);
+INSERT INTO `mydb`.`Session` (`id`, `login_time`, `logout_time`, `User_id`) VALUES (3, '2024-12-20 15:45:17', '2024-12-20 19:45:17', 3);
+
 
 COMMIT;
 
@@ -318,22 +305,13 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (1, 'upload', '2023-02-26 10:26:54', 7, 1);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (2, 'edit', '2023-03-12 12:24:28', 7, 1);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (3, 'upload', '2023-05-12 19:15:12', 5, 2);
+INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (1, 'upload', '2023-02-26 10:26:54', 1, 1);
+INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (2, 'edit', '2023-03-12 12:24:28', 2, 1);
+INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (3, 'upload', '2023-05-12 19:15:12', 3, 2);
 INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (4, 'upload', '2023-11-30 16:17:29', 2, 3);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (5, 'edit', '2024-10-16 17:30:56', 6, 3);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (6, 'upload', '2023-01-12 17:26:17', 1, 4);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (7, 'upload', '2024-04-08 08:54:54', 1, 5);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (8, 'upload', '2024-03-15 11:49:02', 3, 6);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (9, 'upload', '2022-08-16 13:23:16', 3, 7);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (10, 'edit', '2024-06-09 12:17:53', 3, 7);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (11, 'upload', '2022-12-20 20:28:32', 4, 8);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (12, 'edit', '2023-01-19 14:01:12', 5, 8);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (13, 'upload', '2023-05-04 09:41:32', 6, 9);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (14, 'edit', '2024-08-01 17:23:15', 6, 9);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (15, 'upload', '2023-10-26 11:11:11', 2, 10);
-INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (16, 'edit', '2024-05-07 16:15:45', 1, 10);
+INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (5, 'edit', '2024-10-16 17:30:56', 3, 3);
+INSERT INTO `mydb`.`Log` (`id`, `action_type`, `action_date`, `User_id`, `Data_id`) VALUES (6, 'upload', '2023-01-12 17:26:17', 1, 2);
+
 
 COMMIT;
 
