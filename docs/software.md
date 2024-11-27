@@ -324,10 +324,10 @@ USE `mydb`;
 INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (1, 'read', 1, 3);
 INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (2, 'edit', 1, 3);
 INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (3, 'delete', 1, 3);
-INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (4, 'read', 4, 7);
-INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (5, 'edit', 4, 7);
-INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (6, 'read', 5, 4);
-INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (7, 'edit', 5, 4);
+INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (4, 'read', 3, 2);
+INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (5, 'edit', 2, 1);
+INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (6, 'read', 2, 1);
+INSERT INTO `mydb`.`Access` (`id`, `access_type`, `User_id`, `Data_id`) VALUES (7, 'edit', 3, 2);
 
 COMMIT;
 
